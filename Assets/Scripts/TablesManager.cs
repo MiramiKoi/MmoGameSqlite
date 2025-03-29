@@ -22,6 +22,8 @@ public class TablesManager : MonoBehaviour
     {
         _databaseManager = FindFirstObjectByType<DatabaseManager>();
         _databaseManager.onDatabaseSelected.AddListener(LoadDatabase);
+        
+        tablesDropdown.onValueChanged.AddListener(OnTableSelected);
     }
 
     // Загрузка базы данных и получение списка таблиц
