@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class TablesManager : MonoBehaviour
 {
@@ -12,14 +13,17 @@ public class TablesManager : MonoBehaviour
     public TMP_Dropdown tablesDropdown;
 
     private readonly List<string> _availableTables = new ();
-    private string _currentTable = "";
-
-    private DatabaseManager _databaseManager;
+    public string currentTable = "";
     
     public UnityEvent<string> onTablesChanged;
 
+    private DatabaseManager _databaseManager;
+    private DatabaseSearch _databaseSearch;
+    
     private void Awake()
     {
+        _databaseSearch = FindFirstObjectByType<DatabaseSearch>();
+        
         _databaseManager = FindFirstObjectByType<DatabaseManager>();
         _databaseManager.onDatabaseSelected.AddListener(LoadDatabase);
         
@@ -87,25 +91,37 @@ public class TablesManager : MonoBehaviour
     {
         if (index < 0 || index >= _availableTables.Count) return;
         
-        _currentTable = _availableTables[index];
-        Debug.Log($"Выбрана таблица: {_currentTable}");
+        currentTable = _availableTables[index];
+        Debug.Log($"Выбрана таблица: {currentTable}");
 
         // Получаем информацию о структуре таблицы
-        GetTableStructure(_currentTable);
+        GetTableStructure(currentTable);
 
         // Загружаем данные из выбранной таблицы
-        onTablesChanged.Invoke(_currentTable);
+        onTablesChanged.Invoke(currentTable);
     }
 
     // Получение структуры таблицы (для отображения информации)
     private void GetTableStructure(string tableName)
     {
-        var query = $"PRAGMA table_info({tableName})";
-        var structure = _databaseManager.ExecuteQuery(query);
-
-        var structureInfo = $"Структура таблицы {tableName}:\n";
-
-        structureInfo = structure.Rows.Cast<DataRow>()
-            .Aggregate(structureInfo, (current, row) => current + $"{row["name"]} ({row["type"]})\n");
+        string query = $"PRAGMA table_info({tableName})";
+        DataTable structure = _databaseManager.ExecuteQuery(query);
+        
+        string structureInfo = $"Структура таблицы {tableName}:\n";
+        
+        // Очищаем предыдущий список столбцов
+        _databaseSearch.currentColumns.Clear();
+        
+        foreach (DataRow row in structure.Rows)
+        {
+            string columnName = row["name"].ToString();
+            string columnType = row["type"].ToString();
+            
+            structureInfo += $"{columnName} ({columnType})\n";
+            _databaseSearch.currentColumns.Add(columnName);
+        }
+        
+        // Обновляем выпадающий список столбцов для поиска
+        _databaseSearch.UpdateSearchColumnDropdown();
     }
 }

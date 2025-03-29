@@ -11,18 +11,20 @@ public class TablesViewer : MonoBehaviour
     public Transform tableContentParent;
     
     private DatabaseManager _databaseManager;
+    private DatabaseSearch _databaseSearch;
     private TablesManager _tablesManager;
 
     private void Awake()
     {
         _databaseManager = FindFirstObjectByType<DatabaseManager>();
+        _databaseSearch = FindFirstObjectByType<DatabaseSearch>();
         
         _tablesManager = FindFirstObjectByType<TablesManager>();
         _tablesManager.onTablesChanged.AddListener(LoadTableData);
     }
     
      // Загрузка данных из выбранной таблицы
-    private void LoadTableData(string tableName)
+    public void LoadTableData(string tableName)
     {
         if (string.IsNullOrEmpty(tableName))
         {
@@ -51,7 +53,7 @@ public class TablesViewer : MonoBehaviour
     }
 
     // Отображение данных с использованием префабов
-    private void DisplayTableData(DataTable data)
+    public void DisplayTableData(DataTable data)
     {
         if (data == null || data.Rows.Count == 0)
         {
@@ -83,7 +85,7 @@ public class TablesViewer : MonoBehaviour
     }
 
     // Очистка содержимого таблицы
-    private void ClearTableContent()
+    public void ClearTableContent()
     {
         foreach (Transform child in tableContentParent)
         {
