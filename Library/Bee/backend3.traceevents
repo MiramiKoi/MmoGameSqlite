@@ -1,0 +1,616 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1743189605278547, "dur":37119, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189605315676, "dur":228, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189605315987, "dur":668, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189605316847, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1743189605317063, "dur":67, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":0, "ts":1743189605317671, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":0, "ts":1743189605320701, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":0, "ts":1743189605316710, "dur":4686, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189605321397, "dur":17326128, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189622647544, "dur":263, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189622648085, "dur":2282, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1743189605316689, "dur":4729, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743189605324573, "dur":1358, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/il2cpp/build/deploy" }}
+,{ "pid":12345, "tid":1, "ts":1743189605325931, "dur":9837, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/il2cpp/libil2cpp" }}
+,{ "pid":12345, "tid":1, "ts":1743189605335768, "dur":144, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport" }}
+,{ "pid":12345, "tid":1, "ts":1743189605335912, "dur":1994, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono" }}
+,{ "pid":12345, "tid":1, "ts":1743189605337906, "dur":140, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources" }}
+,{ "pid":12345, "tid":1, "ts":1743189605338046, "dur":332, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.26f1/Editor/Data/Tools/BuildPipeline" }}
+,{ "pid":12345, "tid":1, "ts":1743189605338378, "dur":135, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Library/PlayerDataCache/Win642/Data" }}
+,{ "pid":12345, "tid":1, "ts":1743189605321429, "dur":17133, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743189605338581, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile Library/Bee/artifacts/rsp/15210211636324033151.rsp" }}
+,{ "pid":12345, "tid":1, "ts":1743189605338687, "dur":1379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker E:/Unity Projects/MmoGameDb/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
+,{ "pid":12345, "tid":1, "ts":1743189605340067, "dur":1032, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1743189605342037, "dur":52569, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189605394624, "dur":233758, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189605628387, "dur":447981, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606076405, "dur":97930, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606174361, "dur":375269, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606549638, "dur":36517, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606586183, "dur":222838, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606809042, "dur":118814, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606927861, "dur":43886, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1743189606971881, "dur":158006, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"E:\\Unity Projects\\MmoGameDb\\Library\\PackageCache\\com.unity.burst\\.Runtime\\bcl.exe" }}
+,{ "pid":12345, "tid":1, "ts":1743189605342007, "dur":1787882, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":1, "ts":1743189607130383, "dur":15517041, "ph":"X", "name": "GenerateNativePluginsForAssemblies",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":2, "ts":1743189605316702, "dur":4727, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605321442, "dur":1500, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605322942, "dur":1316, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605324258, "dur":1442, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605325700, "dur":12871, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605338579, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1743189605338726, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605338849, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1743189605338975, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605339045, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605339151, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605339244, "dur":2760, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189605342056, "dur":90327, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605342016, "dur":90368, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605432428, "dur":1480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605433937, "dur":236288, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605433912, "dur":236315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605670264, "dur":2342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605672643, "dur":61705, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605672611, "dur":61739, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605734411, "dur":1717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605736160, "dur":78723, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605736132, "dur":78752, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605814911, "dur":2360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605817324, "dur":53151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605817279, "dur":53198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605870511, "dur":3422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605873978, "dur":66387, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605873940, "dur":66428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605940402, "dur":5783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605946215, "dur":71951, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189605946190, "dur":71978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606018209, "dur":1975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606020215, "dur":107901, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606020190, "dur":107928, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606128150, "dur":1802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Tilemap.Extras.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606129981, "dur":134178, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606129957, "dur":134203, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606264192, "dur":1756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606265983, "dur":261466, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606265959, "dur":261492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606527522, "dur":2693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606530247, "dur":54554, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606530220, "dur":54583, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606584838, "dur":2778, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606587644, "dur":267402, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606587620, "dur":267428, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606855157, "dur":3384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606861578, "dur":101, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1743189606858568, "dur":3133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1743189606861705, "dur":15785819, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605316764, "dur":4692, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605321464, "dur":1641, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605323106, "dur":1260, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605324367, "dur":1586, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605325954, "dur":12612, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605338595, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605338688, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605338812, "dur":54, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1743189605338867, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1743189605339060, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605339213, "dur":2821, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605342063, "dur":73572, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189605342034, "dur":73602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189605415647, "dur":188, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605419945, "dur":133, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189605415853, "dur":4245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189605420159, "dur":595175, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189605420115, "dur":595222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606015389, "dur":6793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606022220, "dur":129237, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606022188, "dur":129271, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606151495, "dur":8908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606160436, "dur":88485, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606160407, "dur":88516, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606248944, "dur":9818, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.PixelPerfect.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606258841, "dur":210109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606258767, "dur":210186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606468966, "dur":239, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189606469215, "dur":4397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606473665, "dur":46189, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606473623, "dur":46235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606519873, "dur":219, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189606520101, "dur":2235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606522367, "dur":86681, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606522341, "dur":86708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606609075, "dur":3392, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InputSystem.ForUI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606612499, "dur":98832, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606612472, "dur":98862, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606711349, "dur":191, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189606711549, "dur":10135, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606721713, "dur":110253, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606721689, "dur":110279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606832010, "dur":3106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Common.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606836874, "dur":200, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1743189606835142, "dur":1953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606837138, "dur":128421, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Burst.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606837106, "dur":128455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606965588, "dur":13320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":3, "ts":1743189606978911, "dur":15668624, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605316749, "dur":4696, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605321456, "dur":1661, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605323117, "dur":1516, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605324634, "dur":1661, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605326295, "dur":12269, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605338578, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":4, "ts":1743189605338664, "dur":54, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":4, "ts":1743189605338719, "dur":1050, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1743189605339794, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605339848, "dur":2179, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605342058, "dur":93675, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605342028, "dur":93707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605515114, "dur":199, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605435774, "dur":79561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.IK.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605515416, "dur":8919, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605515352, "dur":8985, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605530239, "dur":169, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605524368, "dur":6056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InternalAPIEngineBridge.001.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605530458, "dur":120581, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605530430, "dur":120612, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605651054, "dur":223, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605651285, "dur":7193, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605658504, "dur":132318, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605658481, "dur":132343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605790840, "dur":90, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605790944, "dur":2673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605793658, "dur":117393, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605793622, "dur":117432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605911070, "dur":100, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189605911181, "dur":28245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605939468, "dur":73384, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189605939432, "dur":73423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606012892, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606015466, "dur":105113, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606015432, "dur":105149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606120592, "dur":75, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606120674, "dur":2519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606123224, "dur":146577, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606123197, "dur":146607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606269814, "dur":216, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606270036, "dur":7103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606277242, "dur":38634, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606277150, "dur":38729, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606315912, "dur":1654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606317598, "dur":1125, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606317569, "dur":1156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606320464, "dur":266, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606318782, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606320874, "dur":43151, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606320762, "dur":43266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606364060, "dur":1743, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606365832, "dur":85625, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606365806, "dur":85653, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606451498, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606454034, "dur":60253, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606453979, "dur":60311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606514328, "dur":2288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606516643, "dur":181973, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606516620, "dur":181998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606698656, "dur":108, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606719902, "dur":93, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606698795, "dur":21261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.SpriteShape.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606720089, "dur":49737, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606720062, "dur":49766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606769839, "dur":165, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606770012, "dur":8534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606778581, "dur":56900, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606778550, "dur":56933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606835491, "dur":248, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606840323, "dur":104, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1743189606835746, "dur":4702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606840484, "dur":56881, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AMDModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606840454, "dur":56913, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AMDModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606897397, "dur":1417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AMDModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1743189606898817, "dur":15748741, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605316799, "dur":4667, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605321473, "dur":1581, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605323055, "dur":1087, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605324143, "dur":1537, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605325681, "dur":343, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605326024, "dur":12549, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605338579, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1743189605338766, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605338843, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1743189605338926, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605339019, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":5, "ts":1743189605339115, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605339183, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605339257, "dur":2773, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605342050, "dur":304549, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605342032, "dur":304570, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605646614, "dur":3418, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189605650059, "dur":2782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605652867, "dur":92725, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605652844, "dur":92750, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605745625, "dur":1722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605747375, "dur":218742, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605747351, "dur":218768, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605966150, "dur":3611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605969809, "dur":53980, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189605969764, "dur":54027, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606023823, "dur":1804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606025741, "dur":243461, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606025632, "dur":243573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606269238, "dur":7436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606276710, "dur":42849, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606276680, "dur":42880, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606319636, "dur":1492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606321152, "dur":47657, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606321131, "dur":47680, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606368834, "dur":1393, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606370254, "dur":49219, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606370231, "dur":49244, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606419513, "dur":2229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606421781, "dur":47339, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606421747, "dur":47375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606469133, "dur":89, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189606469233, "dur":3201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606472473, "dur":119629, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606472449, "dur":119655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606592163, "dur":1836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606594028, "dur":66423, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606594004, "dur":66449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606660491, "dur":2013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606662539, "dur":32131, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606662509, "dur":32164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606696624, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1743189606694720, "dur":1980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606696725, "dur":6852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606703626, "dur":162752, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606703586, "dur":162794, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606866412, "dur":2063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1743189606868480, "dur":15779060, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605316845, "dur":4631, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605321486, "dur":1716, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605323202, "dur":1390, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605324593, "dur":1659, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605326252, "dur":12333, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605338586, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1743189605338704, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605338778, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1743189605338865, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605338929, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605339002, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605339138, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605339256, "dur":2758, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1743189605342044, "dur":133855, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605342016, "dur":133885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605475968, "dur":34054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605510046, "dur":456087, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605510025, "dur":456109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605966156, "dur":2849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605969036, "dur":61801, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189605969011, "dur":61828, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606030901, "dur":2867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606033804, "dur":38814, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606033772, "dur":38848, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606072678, "dur":2284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606075019, "dur":148203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606074966, "dur":148259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606223266, "dur":3272, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606226572, "dur":90947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606226543, "dur":90978, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606317565, "dur":1673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606319262, "dur":123560, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606319242, "dur":123582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606442859, "dur":2824, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606445738, "dur":162741, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606445690, "dur":162791, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606608552, "dur":2204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606610783, "dur":155531, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606610760, "dur":155556, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606766384, "dur":18876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606785289, "dur":142551, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606785265, "dur":142582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606927881, "dur":1331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1743189606929214, "dur":15718345, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605316903, "dur":4587, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605321500, "dur":1634, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605323135, "dur":1544, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605324680, "dur":1406, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605326087, "dur":12480, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605338579, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1743189605338744, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605338817, "dur":143, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1743189605338994, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605339067, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605339142, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605339208, "dur":2793, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1743189605342027, "dur":60964, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605342002, "dur":60991, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605403042, "dur":3184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605406263, "dur":245568, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605406231, "dur":245603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605651876, "dur":8527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.2D.Animation.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605660441, "dur":177589, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605660408, "dur":177624, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605838065, "dur":6039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605844136, "dur":59457, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605844109, "dur":59486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605903700, "dur":32479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605936211, "dur":140692, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189605936184, "dur":140720, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606076956, "dur":2496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606079491, "dur":63203, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606079458, "dur":63238, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606142727, "dur":1804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606144563, "dur":328035, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606144535, "dur":328065, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606472627, "dur":7557, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606480215, "dur":43578, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606480188, "dur":43607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606523856, "dur":5332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606529242, "dur":122097, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606529193, "dur":122148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606651376, "dur":2350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606653755, "dur":39947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606653731, "dur":39974, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606693745, "dur":2745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606696526, "dur":1783, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606696495, "dur":1815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606698374, "dur":3221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606701629, "dur":101054, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606701600, "dur":101085, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606802754, "dur":3180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606805963, "dur":64801, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606805939, "dur":64828, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606870832, "dur":1978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1743189606872813, "dur":15774707, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605316950, "dur":4552, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605321511, "dur":1684, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605323196, "dur":1471, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605324667, "dur":285, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605324953, "dur":1493, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605326446, "dur":12123, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605338578, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1743189605338667, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605338756, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1743189605338818, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605338894, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189605339002, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605339081, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605339156, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605339273, "dur":2729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1743189605342030, "dur":41934, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189605342003, "dur":41963, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189605385517, "dur":4955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189605390551, "dur":684615, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189605390477, "dur":684691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606075201, "dur":2109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606077339, "dur":81544, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606077313, "dur":81573, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606158924, "dur":1890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606160837, "dur":279374, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606160817, "dur":279397, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606440252, "dur":3076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606443368, "dur":79408, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606443333, "dur":79444, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606522802, "dur":2948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606525782, "dur":59945, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606525755, "dur":59975, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606585797, "dur":3480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606589307, "dur":301579, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Rendering.LightTransport.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606589282, "dur":301607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606890922, "dur":1924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll" }}
+,{ "pid":12345, "tid":8, "ts":1743189606892851, "dur":15754696, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605316999, "dur":4514, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605321521, "dur":1507, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605323028, "dur":1458, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605324487, "dur":1708, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605326196, "dur":12387, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605338584, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1743189605338739, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605338839, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1743189605338913, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605338993, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/D3D12/D3D12Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605339070, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605339266, "dur":2756, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605342059, "dur":310575, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605342033, "dur":310603, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605652711, "dur":5445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605658212, "dur":56607, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605658163, "dur":56658, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605714836, "dur":218, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605717400, "dur":101, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605715064, "dur":2466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605717577, "dur":180763, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605717536, "dur":180807, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605898358, "dur":409, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605901177, "dur":198, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189605898779, "dur":2615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605901436, "dur":139201, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189605901399, "dur":139240, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606040675, "dur":1684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606042385, "dur":56365, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606042362, "dur":56390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606098764, "dur":245, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606102716, "dur":71, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606099017, "dur":3786, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606102833, "dur":53610, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606102808, "dur":53637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606156482, "dur":17985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606174493, "dur":71951, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606174472, "dur":71974, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606246459, "dur":440, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606247074, "dur":10436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606257539, "dur":160310, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606257515, "dur":160337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606417930, "dur":3076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606421083, "dur":48744, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606421012, "dur":48816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606469859, "dur":5506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606475401, "dur":95263, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606475370, "dur":95297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606570681, "dur":317, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606571008, "dur":2228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.MarshallingModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606573273, "dur":194258, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606573244, "dur":194288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606767544, "dur":163, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606773796, "dur":382, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1743189606767714, "dur":6482, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606774423, "dur":81451, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ShaderVariantAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606774201, "dur":81675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606855966, "dur":7466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1743189606863438, "dur":15784084, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605317067, "dur":4455, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605321529, "dur":1609, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605323138, "dur":1507, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605324646, "dur":779, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605325425, "dur":1240, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605326666, "dur":11922, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605338590, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":10, "ts":1743189605338695, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605338807, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1743189605338907, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605338989, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":10, "ts":1743189605339111, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605339187, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605339255, "dur":2745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605342039, "dur":288483, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605342001, "dur":288524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605630538, "dur":19477, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189605650056, "dur":4324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605654413, "dur":282197, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605654386, "dur":282226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605936678, "dur":10013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605946779, "dur":58345, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189605946714, "dur":58412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606005138, "dur":278, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189606005426, "dur":2760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606008217, "dur":134014, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606008190, "dur":134043, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606142270, "dur":4682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606146981, "dur":63955, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606146955, "dur":63983, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606215351, "dur":91, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189606211005, "dur":4495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606215537, "dur":250269, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606215505, "dur":250303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606465852, "dur":5981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606471857, "dur":42849, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606471837, "dur":42871, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606514743, "dur":2264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606517030, "dur":102327, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606517009, "dur":102350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606621440, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189606619392, "dur":2125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606621584, "dur":88600, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606621521, "dur":88666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606710211, "dur":375, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189606710595, "dur":12111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606722761, "dur":108467, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606722710, "dur":108520, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606831245, "dur":224, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1743189606831478, "dur":2001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606833510, "dur":49250, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606833484, "dur":49278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606882792, "dur":1550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":10, "ts":1743189606884345, "dur":15763207, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605317130, "dur":4403, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605321542, "dur":1666, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605323209, "dur":1529, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605324738, "dur":1590, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605326329, "dur":12264, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605338594, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":11, "ts":1743189605338773, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605338852, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":11, "ts":1743189605338918, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605338995, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605339134, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605339252, "dur":2746, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189605342032, "dur":52292, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605341999, "dur":52327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605394521, "dur":2960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605397523, "dur":89608, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605397486, "dur":89646, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605487164, "dur":21737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605508928, "dur":332720, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605508905, "dur":332745, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605841685, "dur":5465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605847189, "dur":54982, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605847156, "dur":55017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605902205, "dur":1909, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605904146, "dur":163153, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189605904117, "dur":163185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606067340, "dur":1781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606069180, "dur":172574, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606069126, "dur":172630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606241793, "dur":3092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606244915, "dur":1761, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606244890, "dur":1788, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606246688, "dur":218, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1743189606246914, "dur":1688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606248628, "dur":204582, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606248606, "dur":204606, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606453256, "dur":2566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606455832, "dur":98314, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606455827, "dur":98322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606554193, "dur":4249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606558473, "dur":136275, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606558447, "dur":136309, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606694773, "dur":2587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606697385, "dur":46444, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606697362, "dur":46469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606743864, "dur":5551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606749450, "dur":52286, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606749421, "dur":52317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606801770, "dur":3375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606805179, "dur":49897, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606805150, "dur":49928, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606855148, "dur":3082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606858262, "dur":113458, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606858235, "dur":113487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606971748, "dur":7499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":11, "ts":1743189606979250, "dur":15668276, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605317200, "dur":4346, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605321547, "dur":1534, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605323082, "dur":1504, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605324586, "dur":1557, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605326143, "dur":12438, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605338589, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1743189605338754, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605338837, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":12, "ts":1743189605338937, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605339054, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605339132, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605339206, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605339280, "dur":2725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189605342041, "dur":397941, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Xml.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605342023, "dur":397961, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605740027, "dur":4849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605744922, "dur":67089, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605744881, "dur":67132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605812049, "dur":2349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605814434, "dur":228652, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189605814402, "dur":228686, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606043100, "dur":144, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189606043251, "dur":1936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606045215, "dur":114947, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606045191, "dur":114973, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606160193, "dur":1394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606161610, "dur":204166, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606161589, "dur":204189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606365804, "dur":2871, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606368703, "dur":234302, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606368679, "dur":234328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606603019, "dur":76, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1743189606603105, "dur":2384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606605518, "dur":164586, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606605493, "dur":164614, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606770133, "dur":9271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606779433, "dur":45853, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606779408, "dur":45881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606825328, "dur":3115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606828475, "dur":43661, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\ManagedStripped\\UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606828447, "dur":43691, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606872167, "dur":1993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/miram/OneDrive/ /Builds/MmoGameDb_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1743189606874164, "dur":15773377, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1743189622654837, "dur":1588, "ph":"X", "name": "ProfilerWriteOutput" }
+,
