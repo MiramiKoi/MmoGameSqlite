@@ -8,12 +8,19 @@ public class DatabaseTableViewer : MonoBehaviour
 {
     [SerializeField] private Transform tableContentParent;
     [SerializeField] private GameObject tableRowPrefab;
-    [SerializeField] private GameObject cellPrefab; // Префаб для одной ячейки данных
+    [SerializeField] private GameObject cellPrefab; // Префаб для ячеек данных
+    [SerializeField] private GameObject cellTypePrefab; // Префаб для ячеек заголовков
     private DatabaseLoader _databaseLoader;
+    
+    private DataTable _currentData; // Храним текущие данные
+    private string _currentSortColumn; // Текущий столбец сортировки
+    private bool _ascending = true; // Направление сортировки (по возрастанию/убыванию)
+    private string _currentDBPath; // Текущий путь к БД
+    private string _currentTableName; // Текущее имя таблицы
     
     private void Start()
     {
-            _databaseLoader = GetComponent<DatabaseLoader>();
+        _databaseLoader = GetComponent<DatabaseLoader>();
     }
     
     // Загрузка данных из выбранной таблицы
@@ -25,6 +32,9 @@ public class DatabaseTableViewer : MonoBehaviour
             return;
         }
 
+        _currentDBPath = dbPath;
+        _currentTableName = tableName;
+
         // Очищаем предыдущие строки
         ClearTableContent();
 
@@ -32,12 +42,12 @@ public class DatabaseTableViewer : MonoBehaviour
         {
             // Выполняем запрос и получаем данные
             string query = $"SELECT * FROM {tableName} LIMIT 100"; // Ограничение на 100 строк
-            DataTable tableData = _databaseLoader.ExecuteQuery(dbPath, query);
+            _currentData = _databaseLoader.ExecuteQuery(dbPath, query);
             
             // Отображаем данные
-            DisplayTableData(tableData);
+            DisplayTableData(_currentData);
             
-            Debug.Log($"Загружено {tableData.Rows.Count} строк из таблицы {tableName}");
+            Debug.Log($"Загружено {_currentData.Rows.Count} строк из таблицы {tableName}");
         }
         catch (Exception ex)
         {
@@ -48,6 +58,7 @@ public class DatabaseTableViewer : MonoBehaviour
     // Отображение результатов поиска
     public void DisplaySearchResults(DataTable data)
     {
+        _currentData = data;
         ClearTableContent();
         DisplayTableData(data);
     }
@@ -95,48 +106,104 @@ public class DatabaseTableViewer : MonoBehaviour
 
         var columnCount = data.Columns.Count;
 
-        // Создаем заголовок таблицы
-        var headerRow = CreateRow(columnCount);
+        // Создаем заголовок таблицы с использованием специального метода
+        var headerRow = CreateHeaderRow(data);
         headerRow.transform.SetParent(tableContentParent, false);
-        
-        // Заполняем заголовки
-        for (int i = 0; i < columnCount; i++)
-        {
-            var cellTransform = headerRow.transform.GetChild(i);
-            var cellText = cellTransform.GetComponentInChildren<TextMeshProUGUI>();
-            if (cellText != null)
-            {
-                cellText.text = data.Columns[i].ColumnName;
-            }
-        }
 
         // Создаем строки с данными
         foreach (DataRow row in data.Rows)
         {
-            var rowObject = CreateRow(columnCount);
+            var rowObject = CreateDataRow(row, data.Columns);
             rowObject.transform.SetParent(tableContentParent, false);
-            
-            // Заполняем ячейки данными
-            for (var i = 0; i < columnCount; i++)
-            {
-                var cellTransform = rowObject.transform.GetChild(i);
-                var cellText = cellTransform.GetComponentInChildren<TextMeshProUGUI>();
-                if (cellText != null)
-                {
-                    cellText.text = row[i].ToString();
-                }
-            }
         }
     }
     
-    // Метод для создания строки с нужным количеством ячеек
-    private GameObject CreateRow(int cellCount)
+    // Метод для создания строки заголовка
+    private GameObject CreateHeaderRow(DataTable data)
+    {
+        var columnCount = data.Columns.Count;
+        var row = Instantiate(tableRowPrefab);
+        
+        // Настраиваем компоненты Layout для строки
+        SetupRowLayoutComponents(row);
+        
+        // Создаем ячейки заголовков
+        for (int i = 0; i < columnCount; i++)
+        {
+            string columnName = data.Columns[i].ColumnName;
+            
+            // Используем cellTypePrefab для заголовков
+            GameObject headerCell = Instantiate(cellTypePrefab, row.transform);
+            
+            // Настраиваем размер ячейки
+            SetupCellLayoutElement(headerCell);
+            
+            // Находим компонент текста
+            var cellText = headerCell.GetComponentInChildren<TextMeshProUGUI>();
+            if (cellText != null)
+            {
+                // Добавляем индикатор сортировки, если этот столбец сортируется
+                cellText.text = columnName;
+                if (columnName == _currentSortColumn)
+                {
+                    cellText.text = columnName + (_ascending ? " ▲" : " ▼");
+                }
+            }
+            
+            // Добавляем компонент Button (если его нет)
+            Button headerButton = headerCell.GetComponent<Button>();
+            if (headerButton == null)
+            {
+                headerButton = headerCell.AddComponent<Button>();
+                
+                // Добавляем визуальный эффект при наведении курсора
+                ColorBlock colors = headerButton.colors;
+                colors.highlightedColor = new Color(0.9f, 0.9f, 1f);
+                headerButton.colors = colors;
+            }
+            
+            // Сохраняем имя столбца для использования в лямбда-выражении
+            string columnNameCopy = columnName;
+            
+            // Добавляем обработчик нажатия
+            headerButton.onClick.RemoveAllListeners();
+            headerButton.onClick.AddListener(() => SortDataByColumn(columnNameCopy));
+        }
+        
+        return row;
+    }
+    
+    // Метод для создания строки данных
+    private GameObject CreateDataRow(DataRow dataRow, DataColumnCollection columns)
     {
         var row = Instantiate(tableRowPrefab);
         
-        // Получаем RectTransform для установки высоты и ширины строки
-        RectTransform rowRect = row.GetComponent<RectTransform>();
+        // Настраиваем компоненты Layout для строки
+        SetupRowLayoutComponents(row);
         
+        // Создаем ячейки данных
+        for (int i = 0; i < columns.Count; i++)
+        {
+            // Используем cellPrefab для ячеек данных
+            GameObject cell = Instantiate(cellPrefab, row.transform);
+            
+            // Настраиваем размер ячейки
+            SetupCellLayoutElement(cell);
+            
+            // Находим компонент текста
+            var cellText = cell.GetComponentInChildren<TextMeshProUGUI>();
+            if (cellText != null)
+            {
+                cellText.text = dataRow[i].ToString();
+            }
+        }
+        
+        return row;
+    }
+    
+    // Настройка компонентов Layout для строки
+    private void SetupRowLayoutComponents(GameObject row)
+    {
         // Уничтожаем все существующие ячейки (если они есть в префабе)
         foreach (Transform child in row.transform)
         {
@@ -164,24 +231,78 @@ public class DatabaseTableViewer : MonoBehaviour
             sizeFitter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
             sizeFitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
         }
-        
-        // Создаем нужное количество ячеек
-        for (int i = 0; i < cellCount; i++)
+    }
+    
+    // Настройка компонентов Layout для ячейки
+    private void SetupCellLayoutElement(GameObject cell)
+    {
+        LayoutElement layoutElement = cell.GetComponent<LayoutElement>();
+        if (layoutElement == null)
         {
-            GameObject cell = Instantiate(cellPrefab, row.transform);
-            
-            // Устанавливаем размер ячейки через LayoutElement
-            LayoutElement layoutElement = cell.GetComponent<LayoutElement>();
-            if (layoutElement == null)
-            {
-                layoutElement = cell.AddComponent<LayoutElement>();
-            }
-            
-            // Все ячейки имеют одинаковую ширину (если таблица широкая, можно использовать скролл)
-            layoutElement.flexibleWidth = 1;
-            layoutElement.minWidth = 80;
+            layoutElement = cell.AddComponent<LayoutElement>();
         }
         
-        return row;
+        // Все ячейки имеют одинаковую ширину (если таблица широкая, можно использовать скролл)
+        layoutElement.flexibleWidth = 1;
+        layoutElement.minWidth = 80;
+    }
+    
+    // Метод для сортировки данных по указанному столбцу
+    private void SortDataByColumn(string columnName)
+    {
+        if (_currentData == null || _currentData.Rows.Count == 0)
+            return;
+            
+        // Проверяем, сортируем ли мы по тому же столбцу
+        if (_currentSortColumn == columnName)
+        {
+            // Если да, то меняем направление сортировки
+            _ascending = !_ascending;
+        }
+        else
+        {
+            // Если нет, то устанавливаем новый столбец и сортируем по возрастанию
+            _currentSortColumn = columnName;
+            _ascending = true;
+        }
+        
+        // Создаем отсортированную таблицу
+        DataTable sortedTable = _currentData.Clone();
+        
+        // Определяем порядок сортировки
+        DataRow[] sortedRows;
+        
+        try
+        {
+            // Проверяем тип данных в столбце для правильной сортировки
+            Type columnType = _currentData.Columns[columnName].DataType;
+            
+            // Сортируем в зависимости от направления
+            if (_ascending)
+            {
+                sortedRows = _currentData.Select("", columnName + " ASC");
+            }
+            else
+            {
+                sortedRows = _currentData.Select("", columnName + " DESC");
+            }
+            
+            // Заполняем таблицу отсортированными данными
+            foreach (DataRow row in sortedRows)
+            {
+                sortedTable.ImportRow(row);
+            }
+            
+            // Обновляем текущие данные и отображение
+            _currentData = sortedTable;
+            ClearTableContent();
+            DisplayTableData(_currentData);
+            
+            Debug.Log($"Данные отсортированы по столбцу {columnName} {(_ascending ? "по возрастанию" : "по убыванию")}");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Ошибка при сортировке данных: {ex.Message}");
+        }
     }
 }
