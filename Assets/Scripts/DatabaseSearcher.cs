@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Data;
 using TMPro;
 
 public class DatabaseSearcher : MonoBehaviour
@@ -14,10 +13,10 @@ public class DatabaseSearcher : MonoBehaviour
     
     private DatabaseLoader _databaseLoader;
     
-    private DatabaseTableViewer tableViewer;
-    private List<string> currentColumns = new List<string>();
-    private string currentTable = "";
-    private string currentDbPath = "";
+    private DatabaseTableViewer _tableViewer;
+    private List<string> _currentColumns = new ();
+    private string _currentTable = "";
+    private string _currentDbPath = "";
     
     private void Awake()
     {
@@ -38,23 +37,23 @@ public class DatabaseSearcher : MonoBehaviour
     
     public void Initialize(DatabaseTableViewer viewer)
     {
-        tableViewer = viewer;
+        _tableViewer = viewer;
     }
     
     // Установка текущей таблицы для поиска
     public void SetCurrentTable(string dbPath, string tableName)
     {
-        currentDbPath = dbPath;
-        currentTable = tableName;
+        _currentDbPath = dbPath;
+        _currentTable = tableName;
     }
     
     // Обновление выпадающего списка столбцов для поиска
     public void UpdateSearchColumns(List<TableColumn> columns)
     {
-        currentColumns.Clear();
+        _currentColumns.Clear();
         foreach (var column in columns)
         {
-            currentColumns.Add(column.Name);
+            _currentColumns.Add(column.Name);
         }
         
         UpdateSearchColumnDropdown();
@@ -69,10 +68,10 @@ public class DatabaseSearcher : MonoBehaviour
         searchColumnDropdown.ClearOptions();
         
         // Добавляем опцию для поиска по всем столбцам
-        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
+        var options = new List<TMP_Dropdown.OptionData>();
         options.Add(new TMP_Dropdown.OptionData("Все столбцы"));
         
-        foreach (string columnName in currentColumns)
+        foreach (var columnName in _currentColumns)
         {
             options.Add(new TMP_Dropdown.OptionData(columnName));
         }
@@ -91,25 +90,25 @@ public class DatabaseSearcher : MonoBehaviour
     }
     
     // Метод поиска строк в базе данных
-    public void SearchInDatabase()
+    private void SearchInDatabase()
     {
-        if (searchInputField == null || string.IsNullOrEmpty(currentTable) || string.IsNullOrEmpty(currentDbPath))
+        if (searchInputField == null || string.IsNullOrEmpty(_currentTable) || string.IsNullOrEmpty(_currentDbPath))
             return;
             
-        string searchText = searchInputField.text;
+        var searchText = searchInputField.text;
         
         if (string.IsNullOrEmpty(searchText))
         {
             // Если поле поиска пустое, показываем все данные
-            tableViewer.LoadTableData(currentDbPath, currentTable);
+            _tableViewer.LoadTableData(_currentDbPath, _currentTable);
             return;
         }
         
         // Определяем, по какому столбцу искать
-        string selectedColumn = "Все столбцы";
+        var selectedColumn = "Все столбцы";
         if (searchColumnDropdown != null && searchColumnDropdown.value > 0)
         {
-            selectedColumn = currentColumns[searchColumnDropdown.value - 1]; // -1 так как первый элемент "Все столбцы"
+            selectedColumn = _currentColumns[searchColumnDropdown.value - 1]; // -1 так как первый элемент "Все столбцы"
         }
         
         try
@@ -119,27 +118,27 @@ public class DatabaseSearcher : MonoBehaviour
             if (selectedColumn == "Все столбцы")
             {
                 // Создаем SQL запрос для поиска по всем столбцам
-                StringBuilder whereClause = new StringBuilder();
+                var whereClause = new StringBuilder();
                 
-                for (int i = 0; i < currentColumns.Count; i++)
+                for (var i = 0; i < _currentColumns.Count; i++)
                 {
                     if (i > 0) whereClause.Append(" OR ");
-                    whereClause.Append($"{currentColumns[i]} LIKE @searchParam");
+                    whereClause.Append($"{_currentColumns[i]} LIKE @searchParam");
                 }
                 
-                query = $"SELECT * FROM {currentTable} WHERE {whereClause} LIMIT 100";
+                query = $"SELECT * FROM {_currentTable} WHERE {whereClause} LIMIT 100";
             }
             else
             {
                 // Создаем SQL запрос для поиска по выбранному столбцу
-                query = $"SELECT * FROM {currentTable} WHERE {selectedColumn} LIKE @searchParam LIMIT 100";
+                query = $"SELECT * FROM {_currentTable} WHERE {selectedColumn} LIKE @searchParam LIMIT 100";
             }
             
             // Выполняем запрос с параметром
-            DataTable searchResults = _databaseLoader.ExecuteParameterizedQuery(currentDbPath, query, "@searchParam", $"%{searchText}%");
+            var searchResults = _databaseLoader.ExecuteParameterizedQuery(_currentDbPath, query, "@searchParam", $"%{searchText}%");
             
             // Отображаем результаты поиска
-            tableViewer.DisplaySearchResults(searchResults);
+            _tableViewer.DisplaySearchResults(searchResults);
             
             Debug.Log($"Поиск выполнен. Найдено строк: {searchResults.Rows.Count}");
         }

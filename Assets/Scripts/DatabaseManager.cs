@@ -1,8 +1,10 @@
 using UnityEngine;
 using System;
+using System.Diagnostics;
 using System.IO;
-using System.Collections.Generic;
+using SFB;
 using UnityEngine.Events;
+using Debug = UnityEngine.Debug;
 
 public class DatabaseManager : MonoBehaviour
 {
@@ -21,7 +23,6 @@ public class DatabaseManager : MonoBehaviour
         _databaseUI = GetComponent<DatabaseUI>();
         _tableViewer = GetComponent<DatabaseTableViewer>();
         _databaseSearcher = GetComponent<DatabaseSearcher>();
-
         Initialize();
     }
 
@@ -40,7 +41,7 @@ public class DatabaseManager : MonoBehaviour
     }
 
     // Загрузка базы данных и получение списка таблиц
-    public void LoadDatabase()
+    private void LoadDatabase()
     {
         if (string.IsNullOrEmpty(databasePath))
         {
@@ -57,7 +58,7 @@ public class DatabaseManager : MonoBehaviour
         try
         {
             // Получаем список таблиц
-            List<string> availableTables = _databaseLoader.GetAvailableTables(databasePath);
+            var availableTables = _databaseLoader.GetAvailableTables(databasePath);
 
             // Обновляем выпадающий список
             _databaseUI.UpdateTablesDropdown(availableTables);
@@ -75,23 +76,22 @@ public class DatabaseManager : MonoBehaviour
     // Обработчик выбора таблицы
     private void TableSelected(string tableName)
     {
-        if (!string.IsNullOrEmpty(tableName))
-        {
-            // Получаем информацию о структуре таблицы
-            var structure = _databaseLoader.GetTableStructure(databasePath, tableName);
+        if (string.IsNullOrEmpty(tableName)) return;
+        
+        // Получаем информацию о структуре таблицы
+        var structure = _databaseLoader.GetTableStructure(databasePath, tableName);
 
-            // Отображаем структуру таблицы
-            _databaseUI.ShowTableStructure(tableName, structure);
+        // Отображаем структуру таблицы
+        _databaseUI.ShowTableStructure(tableName, structure);
 
-            // Обновляем выпадающий список столбцов для поиска
-            _databaseSearcher.UpdateSearchColumns(structure);
+        // Обновляем выпадающий список столбцов для поиска
+        _databaseSearcher.UpdateSearchColumns(structure);
 
-            // Устанавливаем текущую таблицу для поиска
-            _databaseSearcher.SetCurrentTable(databasePath, tableName);
+        // Устанавливаем текущую таблицу для поиска
+        _databaseSearcher.SetCurrentTable(databasePath, tableName);
 
-            // Загружаем данные из выбранной таблицы
-            _tableViewer.LoadTableData(databasePath, tableName);
-        }
+        // Загружаем данные из выбранной таблицы
+        _tableViewer.LoadTableData(databasePath, tableName);
     }
 
     // Метод для загрузки файла базы данных через диалог
@@ -100,13 +100,19 @@ public class DatabaseManager : MonoBehaviour
 #if UNITY_EDITOR
         var path = UnityEditor.EditorUtility.OpenFilePanel("Overwrite with db", "", "db");
 
-        if (path.Length != 0)
-        {
-            databasePath = path;
-            LoadDatabase();
-        }
+        if (path.Length == 0) return;
+        
+        databasePath = path;
+        LoadDatabase();
 #else
-        Debug.LogWarning("Функция доступна только в редакторе Unity");
+        // Открыть диалог выбора файла, который работает в билде
+        var paths = StandaloneFileBrowser.OpenFilePanel("Overwrite with db", "", "db", false);
+
+        // Проверяем, был ли выбран файл
+        if (paths.Length == 0 || string.IsNullOrEmpty(paths[0])) return;
+
+        databasePath = paths[0];
+        LoadDatabase();
 #endif
     }
 }

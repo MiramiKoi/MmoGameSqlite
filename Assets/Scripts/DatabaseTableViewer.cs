@@ -20,10 +20,13 @@ public class DatabaseTableViewer : MonoBehaviour
     private string _currentTableName; // Текущее имя таблицы
     private string _primaryKeyColumn; // Имя столбца с первичным ключом
     
+    private ManageWindow _manageWindow;
+    
     private void Start()
     {
         _databaseLoader = GetComponent<DatabaseLoader>();
         _cellEditor = GetComponent<CellEditor>();
+        _manageWindow = GetComponent<ManageWindow>();
     }
     
     // Загрузка данных из выбранной таблицы
@@ -96,7 +99,7 @@ public class DatabaseTableViewer : MonoBehaviour
         }
     }
     
-    // Отображение результатов поиска
+    // Отображение результатов поискаF
     public void DisplaySearchResults(DataTable data)
     {
         _currentData = data;
@@ -261,6 +264,10 @@ public class DatabaseTableViewer : MonoBehaviour
                 // Добавляем обработчик нажатия
                 cellButton.onClick.RemoveAllListeners();
                 cellButton.onClick.AddListener(() => OpenCellEditor(columnNameCopy, primaryKeyValueCopy, cellValueCopy));
+                cellButton.onClick.AddListener(() =>
+                {
+                    _manageWindow.SelectRow(_currentTableName, _primaryKeyColumn, primaryKeyValueCopy);
+                });
             }
         }
         

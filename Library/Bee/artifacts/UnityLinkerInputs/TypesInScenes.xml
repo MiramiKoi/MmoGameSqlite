@@ -1,6 +1,15 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="CellEditor" preserve="nothing"/>
+		<type fullname="DatabaseLoader" preserve="nothing"/>
 		<type fullname="DatabaseManager" preserve="nothing"/>
+		<type fullname="DatabaseRecordAdder" preserve="nothing"/>
+		<type fullname="DatabaseSearcher" preserve="nothing"/>
+		<type fullname="DatabaseTableModifier" preserve="nothing"/>
+		<type fullname="DatabaseTableViewer" preserve="nothing"/>
+		<type fullname="DatabaseUI" preserve="nothing"/>
+		<type fullname="ManageWindow" preserve="nothing"/>
+		<type fullname="PageController" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
 		<type fullname="UnityEngine.U2D.Animation.BufferManager" preserve="nothing"/>
@@ -81,7 +90,9 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Dropdown" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_InputField" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
@@ -130,9 +141,9 @@
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.InputField" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.RectMask2D" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>

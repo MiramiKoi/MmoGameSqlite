@@ -50,7 +50,7 @@ public class CellEditor : MonoBehaviour
     // Обработчик нажатия на кнопку "Сохранить"
     private void OnSaveButtonClick()
     {
-        string newValue = valueInputField.text;
+        var newValue = valueInputField.text;
         
         // Если значение не изменилось, просто закрываем окно
         if (newValue == _originalValue)

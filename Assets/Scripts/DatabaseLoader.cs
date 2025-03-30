@@ -8,15 +8,15 @@ public class DatabaseLoader : MonoBehaviour
     // Получение списка таблиц из базы данных
     public List<string> GetAvailableTables(string dbPath)
     {
-        List<string> availableTables = new List<string>();
+        var availableTables = new List<string>();
         
-        string query = @"
+        var query = @"
             SELECT name 
             FROM sqlite_master 
             WHERE type='table' AND name NOT LIKE 'sqlite_%'
             ORDER BY name";
             
-        DataTable result = ExecuteQuery(dbPath, query);
+        var result = ExecuteQuery(dbPath, query);
         
         foreach (DataRow row in result.Rows)
         {
@@ -30,15 +30,15 @@ public class DatabaseLoader : MonoBehaviour
     // Получение структуры таблицы
     public List<TableColumn> GetTableStructure(string dbPath, string tableName)
     {
-        string query = $"PRAGMA table_info({tableName})";
-        DataTable structure = ExecuteQuery(dbPath, query);
+        var query = $"PRAGMA table_info({tableName})";
+        var structure = ExecuteQuery(dbPath, query);
         
-        List<TableColumn> columns = new List<TableColumn>();
+        var columns = new List<TableColumn>();
         
         foreach (DataRow row in structure.Rows)
         {
-            string columnName = row["name"].ToString();
-            string columnType = row["type"].ToString();
+            var columnName = row["name"].ToString();
+            var columnType = row["type"].ToString();
             
             columns.Add(new TableColumn { Name = columnName, Type = columnType });
         }
@@ -49,7 +49,7 @@ public class DatabaseLoader : MonoBehaviour
     // Выполнение SQL-запроса и получение результата в виде DataTable
     public DataTable ExecuteQuery(string dbPath, string query)
     {
-        DataTable dataTable = new DataTable();
+        var dataTable = new DataTable();
         
         using (SqliteConnection connection = new SqliteConnection($"URI=file:{dbPath}"))
         {
@@ -72,17 +72,17 @@ public class DatabaseLoader : MonoBehaviour
     // Выполнение параметризованного SQL-запроса для безопасного поиска
     public DataTable ExecuteParameterizedQuery(string dbPath, string query, string paramName, string paramValue)
     {
-        DataTable dataTable = new DataTable();
+        var dataTable = new DataTable();
         
         using (SqliteConnection connection = new SqliteConnection($"URI=file:{dbPath}"))
         {
             connection.Open();
             
-            using (SqliteCommand command = new SqliteCommand(query, connection))
+            using (var command = new SqliteCommand(query, connection))
             {
                 command.Parameters.AddWithValue(paramName, paramValue);
                 
-                using (SqliteDataReader reader = command.ExecuteReader())
+                using (var reader = command.ExecuteReader())
                 {
                     dataTable.Load(reader);
                 }
