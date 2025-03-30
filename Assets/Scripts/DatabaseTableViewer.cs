@@ -11,16 +11,19 @@ public class DatabaseTableViewer : MonoBehaviour
     [SerializeField] private GameObject cellPrefab; // Префаб для ячеек данных
     [SerializeField] private GameObject cellTypePrefab; // Префаб для ячеек заголовков
     private DatabaseLoader _databaseLoader;
+    private CellEditor _cellEditor;
     
     private DataTable _currentData; // Храним текущие данные
     private string _currentSortColumn; // Текущий столбец сортировки
     private bool _ascending = true; // Направление сортировки (по возрастанию/убыванию)
     private string _currentDBPath; // Текущий путь к БД
     private string _currentTableName; // Текущее имя таблицы
+    private string _primaryKeyColumn; // Имя столбца с первичным ключом
     
     private void Start()
     {
         _databaseLoader = GetComponent<DatabaseLoader>();
+        _cellEditor = GetComponent<CellEditor>();
     }
     
     // Загрузка данных из выбранной таблицы
@@ -34,6 +37,9 @@ public class DatabaseTableViewer : MonoBehaviour
 
         _currentDBPath = dbPath;
         _currentTableName = tableName;
+
+        // Определяем первичный ключ таблицы
+        IdentifyPrimaryKey(dbPath, tableName);
 
         // Очищаем предыдущие строки
         ClearTableContent();
@@ -52,6 +58,41 @@ public class DatabaseTableViewer : MonoBehaviour
         catch (Exception ex)
         {
             Debug.LogError($"Ошибка при загрузке данных из таблицы {tableName}: {ex.Message}");
+        }
+    }
+    
+    // Определение первичного ключа таблицы
+    private void IdentifyPrimaryKey(string dbPath, string tableName)
+    {
+        try
+        {
+            string query = $"PRAGMA table_info({tableName})";
+            DataTable tableInfo = _databaseLoader.ExecuteQuery(dbPath, query);
+            
+            _primaryKeyColumn = null;
+            
+            // Ищем столбец с primary key
+            foreach (DataRow row in tableInfo.Rows)
+            {
+                if (Convert.ToInt32(row["pk"]) > 0)
+                {
+                    _primaryKeyColumn = row["name"].ToString();
+                    Debug.Log($"Первичный ключ для таблицы {tableName}: {_primaryKeyColumn}");
+                    break;
+                }
+            }
+            
+            // Если не нашли PK, используем первый столбец как идентификатор
+            if (string.IsNullOrEmpty(_primaryKeyColumn) && tableInfo.Rows.Count > 0)
+            {
+                _primaryKeyColumn = tableInfo.Rows[0]["name"].ToString();
+                Debug.Log($"Первичный ключ не найден, используем столбец {_primaryKeyColumn} как идентификатор");
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Ошибка при определении первичного ключа: {ex.Message}");
+            _primaryKeyColumn = null;
         }
     }
     
@@ -181,9 +222,16 @@ public class DatabaseTableViewer : MonoBehaviour
         // Настраиваем компоненты Layout для строки
         SetupRowLayoutComponents(row);
         
+        // Получаем значение первичного ключа для этой строки
+        string primaryKeyValue = string.IsNullOrEmpty(_primaryKeyColumn) ? 
+            "0" : dataRow[_primaryKeyColumn].ToString();
+        
         // Создаем ячейки данных
         for (int i = 0; i < columns.Count; i++)
         {
+            string columnName = columns[i].ColumnName;
+            string cellValue = dataRow[i].ToString();
+            
             // Используем cellPrefab для ячеек данных
             GameObject cell = Instantiate(cellPrefab, row.transform);
             
@@ -194,11 +242,42 @@ public class DatabaseTableViewer : MonoBehaviour
             var cellText = cell.GetComponentInChildren<TextMeshProUGUI>();
             if (cellText != null)
             {
-                cellText.text = dataRow[i].ToString();
+                cellText.text = cellValue;
+            }
+            
+            // Не добавляем кнопку редактирования на PK столбец или если это столбец заголовка
+            bool isPrimaryKey = (columnName == _primaryKeyColumn);
+            
+            // Добавляем кнопку для редактирования, если ячейка не является заголовком
+            if (!isPrimaryKey)
+            {
+                Button cellButton = cell.GetComponent<Button>();
+                
+                // Сохраняем данные для использования в лямбда-выражении
+                string columnNameCopy = columnName;
+                string cellValueCopy = cellValue;
+                string primaryKeyValueCopy = primaryKeyValue;
+                
+                // Добавляем обработчик нажатия
+                cellButton.onClick.RemoveAllListeners();
+                cellButton.onClick.AddListener(() => OpenCellEditor(columnNameCopy, primaryKeyValueCopy, cellValueCopy));
             }
         }
         
         return row;
+    }
+    
+    // Открытие редактора ячейки
+    private void OpenCellEditor(string columnName, string primaryKeyValue, string currentValue)
+    {
+        if (_cellEditor != null)
+        {
+            _cellEditor.OpenEditWindow(_currentTableName, columnName, _primaryKeyColumn, primaryKeyValue, currentValue);
+        }
+        else
+        {
+            Debug.LogError("Компонент CellEditor не найден!");
+        }
     }
     
     // Настройка компонентов Layout для строки
