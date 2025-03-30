@@ -63,7 +63,7 @@ public class DatabaseManager : MonoBehaviour
             _databaseUI.UpdateTablesDropdown(availableTables);
 
             onDataLoaded.Invoke();
-
+            
             Debug.Log("База данных успешно загружена");
         }
         catch (Exception ex)
@@ -79,16 +79,16 @@ public class DatabaseManager : MonoBehaviour
         {
             // Получаем информацию о структуре таблицы
             var structure = _databaseLoader.GetTableStructure(databasePath, tableName);
-        
+
             // Отображаем структуру таблицы
             _databaseUI.ShowTableStructure(tableName, structure);
-        
+
             // Обновляем выпадающий список столбцов для поиска
             _databaseSearcher.UpdateSearchColumns(structure);
-        
-            // Устанавливаем текущую таблицу для поиска (этой строки не хватает)
+
+            // Устанавливаем текущую таблицу для поиска
             _databaseSearcher.SetCurrentTable(databasePath, tableName);
-        
+
             // Загружаем данные из выбранной таблицы
             _tableViewer.LoadTableData(databasePath, tableName);
         }
